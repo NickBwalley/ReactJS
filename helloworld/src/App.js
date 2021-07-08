@@ -8,10 +8,11 @@ function App(){
   // };
   return(
     <div className="app">
-      <h1>Hello React!</h1>            
-      <Tweet/>
-      <br/>
-      <Tweet/>
+      <Tweet name="David Blaine"/>
+      <Tweet name="Aaron Spears"/>
+      <Tweet name="Jay Cutler"/>
+      <Tweet name="Ronnie Coleman"/>
+      
     </div>
   )
 }
