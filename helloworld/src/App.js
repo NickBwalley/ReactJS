@@ -6,16 +6,23 @@ function App(){
   // const sayHello = () =>{
   //   console.log("Hello Kenya!");
   // };
-    const [isRed, setRed] = useState(false);
-    const[count, setCount] = useState(0);
-    const increment = () =>{
-      setCount(count + 1);
-    };
+    // const [isRed, setRed] = useState(false);
+    // const[count, setCount] = useState(0);
+
+    // const increment = () =>{
+    //   setCount(count + 1);
+    //   setRed(!isRed);
+    // };
+    const [users, setUsers] = useState([
+      {name: "Ed", message: "Hello Ed-sheeran!"},
+      {name: "Traversy", message: "I am a professor!"},
+      {name: "David Blaine", message: "It s all an illusion!"}
+    ]);
   return(
     <div className="app">
-
-      <button onClick={increment}>Increment </button>
-      <h1>{count}</h1>
+      {users.map(user =>(
+        <Tweet name={user.name} message={user.message}/>
+      ))}
     </div>
   );
 }
