@@ -1,1 +1,0 @@
-Component in ReactJs - is a file which holds all the logic HTML AND CSS in one file.
