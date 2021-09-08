@@ -1,6 +1,6 @@
-Monday 6th September 2021
+###### Monday 6th September 2021
 *******************************************
-REACT JS
+# REACT JS
 *******************************************
 
 JSX – JavaScript XML. It is simply a syntax extension for JavaScript. It allows us to write directly HTML in React(within JavaScript Code)… Instead of separating the markup and logic in separated file, React uses components for this purpose.
@@ -11,4 +11,5 @@ JSX Elements
 2. Tell React to show another component. (Field, Language, Translate)
 
 *******************************************
+# REACT-CMDS
 $ npm install -g create-react-app
