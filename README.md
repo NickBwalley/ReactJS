@@ -1,1 +1,1 @@
-Frontend Development with ReactJS
+$ npm install -g create-react-app
