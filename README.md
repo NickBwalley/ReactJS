@@ -19,4 +19,7 @@ $ create-react-app *name of the project*
 ###### Alternative 2
 $ npx create-react-app *name of the project*
 
-
+###### remove nodejs
+$ sudo apt-get remove nodejs <br/>
+$ sudo apt-get remove npm
+$ which node
