@@ -12,4 +12,11 @@ JSX Elements
 
 *******************************************
 # REACT-CMDS
+###### Alternative 1
 $ npm install -g create-react-app
+$ create-react-app *name of the project*
+
+###### Alternative 2
+$ npx create-react-app *name of the project*
+
+
