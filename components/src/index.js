@@ -1,7 +1,7 @@
 // import react libraries 
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import faker from 'faker';
 // creating React components
 if(module.hot){
     module.hot.accept();
@@ -12,7 +12,7 @@ const App = () => {
         <div className="ui container comments">
             <div className="comment">
                 <a href="/" className="avatar">
-                    <img alt="avatar" />
+                    <img alt="avatar" src={faker.image.avatar()} />
                 </a>
                 <div className="content">
                     <a href="/" className="author">

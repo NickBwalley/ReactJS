@@ -45,3 +45,6 @@ $ which node
 12. Styling using Semantic-UI
  - set up semantic ui inside index.html
 13. Naive component Approach
+14. Specifying images 
+ - install faker js (npm install --save faker)
+ 
