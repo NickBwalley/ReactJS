@@ -1,25 +1,20 @@
-// import React Libraries
+// import react libraries 
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-function buttonLabel(){
-    return 'click me';
-}
+// creating React components
+if(module.hot){
+    module.hot.accept();
+};
 
-// create React components
 const App = () => {
-    const labelText = 'Enter Username: ';
-    return(
-        <div>
-            <label htmlFor="name">{labelText}</label>
-            <input id = "name" type = "text" />
-            <button style={{backgroundColor: 'green', color: '#fff'}}>{buttonLabel()}</button>
-        </div>
-    );
-}
+    return <div>Hey there!</div>
+};
 
-//create ReactDOM element display elements on the screen
+// render the React Application to the screen
 ReactDOM.render(
     <App/>,
-    document.querySelector("#root")
+    document.querySelector('#root')
 );
+
+// cdn - Content Delivery Network. 

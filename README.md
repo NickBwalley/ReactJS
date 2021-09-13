@@ -32,8 +32,16 @@ $ which node
 5. What is JSX
 6. HTML to JSX
 7. Inline styling with JSX
+ - {{backgroundColor: 'blue'}}
 8. Class vs ClassName
 9. Referencing JS variable
 10. Finding forbidden property name
-11. 
+ - forName?
+11. Three tenets of Components. 
+ - Component nesting - a component shown inside another component
+ - Component reusabilitty - make a component which can be easily reused through our application
+ - Component Configuration - Configure a component once it has been created. 
 
+12. Styling using Semantic-UI
+ - set up semantic ui inside index.html
+13. Naive component Approach
