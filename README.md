@@ -23,3 +23,17 @@ $ npx create-react-app *name of the project*
 $ sudo apt-get remove nodejs <br/>
 $ sudo apt-get remove npm
 $ which node
+
+#### ReactJS-Concepts
+1. Nodejs Installation
+2. Create React-app
+3. JS Module Systems 3 parts.
+4. Displaying content with functional component
+5. What is JSX
+6. HTML to JSX
+7. Inline styling with JSX
+8. Class vs ClassName
+9. Referencing JS variable
+10. Finding forbidden property name
+11. 
+
