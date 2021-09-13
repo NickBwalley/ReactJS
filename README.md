@@ -47,4 +47,5 @@ $ which node
 13. Naive component Approach
 14. Specifying images 
  - install faker js (npm install --save faker)
- 
+15. Duplicating a single component
+
