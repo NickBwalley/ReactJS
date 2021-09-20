@@ -8,9 +8,9 @@ import CommentDetails from './CommentDetail';
 const App = () => {
     return(
         <div className="ui container comments">
-            <CommentDetails author="Sam"/>
-            <CommentDetails author="Jane"/>
-            <CommentDetails author="Alex"/>               
+            <CommentDetails author="Sam" blogPost="Django is the best framework for python!"/>
+            <CommentDetails author="Jane" blogPost="React is the best framework for JavaScript"/>
+            <CommentDetails author="Alex"blogPost="Hey dummy head React is not a framework its a library"/>               
         </div>
     );
 };
