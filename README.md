@@ -53,6 +53,7 @@ $ which node
 5. Duplicating a single component
 6. Extracting JSX to new reusable component
 7. Component Nesting
-8. React's Props System 
+8. React's Props System (Properties)
  - Props - System for passing data from a parent component to a child component.
+9. Passing and Receiving Props.
 
