@@ -3,11 +3,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 import faker from "faker";
 import CommentDetails from "./CommentDetail";
+import ApprovalCard from "./ApprovalCard";
 
 // creating React components
 const App = () => {
   return (
     <div className="ui container comments">
+      <ApprovalCard/>
+      
       <CommentDetails
         author="Sam"
         timeAgo="Today at 4:45PM"
@@ -26,6 +29,7 @@ const App = () => {
         blogPost="Hey dummy head React is not a framework its a library"
         avatar={faker.image.avatar()}
       />
+      
     </div>
   );
 };
