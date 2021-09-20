@@ -25,27 +25,34 @@ $ sudo apt-get remove npm
 $ which node
 
 #### ReactJS-Concepts
+###### Introduction 
 1. Nodejs Installation
 2. Create React-app
 3. JS Module Systems 3 parts.
 4. Displaying content with functional component
-5. What is JSX
-6. HTML to JSX
-7. Inline styling with JSX
+###### Chapter 2
+1. What is JSX
+2. HTML to JSX
+3. Inline styling with JSX
  - {{backgroundColor: 'blue'}}
-8. Class vs ClassName
-9. Referencing JS variable
-10. Finding forbidden property name
+4. Class vs ClassName
+5. Referencing JS variable
+6. Finding forbidden property name
  - forName?
-11. Three tenets of Components. 
+###### Chapter 3
+1. Three tenets of Components. 
  - Component nesting - a component shown inside another component
  - Component reusabilitty - make a component which can be easily reused through our application
  - Component Configuration - Configure a component once it has been created. 
 
-12. Styling using Semantic-UI
+2. Styling using Semantic-UI
  - set up semantic ui inside index.html
-13. Naive component Approach
-14. Specifying images 
+3. Naive component Approach
+4. Specifying images 
  - install faker js (npm install --save faker)
-15. Duplicating a single component
+5. Duplicating a single component
+6. Extracting JSX to new reusable component
+7. Component Nesting
+8. React's Props System 
+ - Props - System for passing data from a parent component to a child component.
 
