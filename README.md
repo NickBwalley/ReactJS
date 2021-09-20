@@ -56,4 +56,6 @@ $ which node
 8. React's Props System (Properties)
  - Props - System for passing data from a parent component to a child component.
 9. Passing and Receiving Props.
+10. Passing Multiple Props.
+
 
