@@ -10,30 +10,37 @@ const App = () => {
   return (
     <div className="ui container comments">
       <ApprovalCard>
+        <div>
+          <h4>Warning!</h4>
+          Are you sure you want to do this?
+        </div>
+      </ApprovalCard>
+
+      <ApprovalCard>
         <CommentDetails
-            author="Sam"
-            timeAgo="Today at 4:45PM"
-            blogPost="Django is the best framework for python!"
-            avatar={faker.image.avatar()}
+          author="Sam"
+          timeAgo="Today at 4:45PM"
+          blogPost="Django is the best framework for python!"
+          avatar={faker.image.avatar()}
         />
       </ApprovalCard>
 
       <ApprovalCard>
-      <CommentDetails
-        author="Jane"
-        timeAgo="Today at 2:00AM"
-        blogPost="React is the best framework for JavaScript"
-        avatar={faker.image.avatar()}
-      />
+        <CommentDetails
+          author="Jane"
+          timeAgo="Today at 2:00AM"
+          blogPost="React is the best framework for JavaScript"
+          avatar={faker.image.avatar()}
+        />
       </ApprovalCard>
 
       <ApprovalCard>
-      <CommentDetails
-        author="Alex"
-        timeAgo="Yesterday at 5:00PM"
-        blogPost="Hey dummy head React is not a framework its a library"
-        avatar={faker.image.avatar()}
-      />
+        <CommentDetails
+          author="Alex"
+          timeAgo="Yesterday at 5:00PM"
+          blogPost="Hey dummy head React is not a framework its a library"
+          avatar={faker.image.avatar()}
+        />
       </ApprovalCard>
     </div>
   );
