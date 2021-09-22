@@ -50,6 +50,7 @@ $ which node
 3. Naive component Approach
 4. Specifying images 
  - install faker js (npm install --save faker)
+ - faker.image.avatar();
 5. Duplicating a single component
 6. Extracting JSX to new component
 7. Component Nesting
@@ -60,6 +61,8 @@ $ which node
 11. Components Reuse
 12. Implementation of an approval card
 13. Showing Custom Children.
+ - {props.children}
+14. Component Reuse Approval Card
 ###### Chapter 4
 1. Class Based Component.
 2. Application Overview.
