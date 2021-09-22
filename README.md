@@ -70,3 +70,9 @@ $ which node
 5. Resetting Geolocation Preference
 6. Handling Async Operations with Functional Components.
 7. Refactoring from Functional to Class Component.
+###### Chapter 5
+1. The rules of state
+- using constructor
+2. Important Note about super(props) Deprecation. 
+3. Initializing State through Constructors.
+4. Updating State properties.
