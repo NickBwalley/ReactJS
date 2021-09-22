@@ -60,4 +60,11 @@ $ which node
 11. Components Reuse
 12. Implementation of an approval card
 13. Showing Custom Children.
-
+###### Chapter 4
+1. Class Based Component.
+2. Application Overview.
+3. Scaffolding the App. 
+4. Getting a Users Physical location
+- window.navigator.geolocation.getCurrentPosition((position) => console.log(position), 
+  (err) console.log(err));
+5. Resetting Geolocation Preference
