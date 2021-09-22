@@ -76,3 +76,5 @@ $ which node
 2. Important Note about super(props) Deprecation. 
 3. Initializing State through Constructors.
 4. Updating State properties.
+5. App Lifecycle Walkthrough.
+6. Handling Errors Gracefully.
