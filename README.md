@@ -78,3 +78,4 @@ $ which node
 4. Updating State properties.
 5. App Lifecycle Walkthrough.
 6. Handling Errors Gracefully.
+7. Conditionally Rendering Content.
