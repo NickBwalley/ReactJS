@@ -68,3 +68,5 @@ $ which node
 - window.navigator.geolocation.getCurrentPosition((position) => console.log(position), 
   (err) console.log(err));
 5. Resetting Geolocation Preference
+6. Handling Async Operations with Functional Components.
+7. Refactoring from Functional to Class Component.
