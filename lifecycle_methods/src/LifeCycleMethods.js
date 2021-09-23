@@ -1,12 +1,8 @@
 import React from "react";
+import SeasonDetail from "./SeasonDetail";
 
 class LifeCycleMethods extends React.Component {
-  constructor(props) {
-    super(props);
-
-    // intializing our state
-    this.state = { lat: null, errMessage: "" };
-  }
+  state = { lat: null, errMessage: "" };
 
   componentDidMount() {
     window.navigator.geolocation.getCurrentPosition(
@@ -20,7 +16,7 @@ class LifeCycleMethods extends React.Component {
       return <div>Error: {this.state.errMessage}</div>;
     }
     if (this.state.lat && !this.state.errMessage) {
-      return <div>Latitude: {this.state.lat}</div>;
+      return <SeasonDetail lat={this.state.lat} />;
     }
     return <div>Loading! Please Wait!</div>;
   }

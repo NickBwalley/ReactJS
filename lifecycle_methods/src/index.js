@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import LifeCycleMethods from "./LifeCycleMethods";
+// import LifeCycleMethods from "./LifeCycleMethods";
+import SeasonDetail from "./SeasonDetail";
 
 // Render component to the screen
-ReactDOM.render(<LifeCycleMethods />, document.querySelector("#root"));
+ReactDOM.render(<SeasonDetail />, document.querySelector("#root"));
