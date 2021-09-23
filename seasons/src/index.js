@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-// import SeasonDetails from "./SeasonDetails";
+import SeasonDetails from "./SeasonDetails";
 
 class App extends React.Component {
   // constructor
@@ -37,4 +37,4 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(<App />, document.querySelector("#root"));
+ReactDOM.render(<SeasonDetails />, document.querySelector("#root"));
