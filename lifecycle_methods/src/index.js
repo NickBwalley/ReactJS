@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import GetLocalTime from "./GetLocalTime";
 import SeasonDetail from "./SeasonDetail";
 import Spinner from "./Spinner";
 
@@ -13,7 +14,8 @@ class App extends React.Component {
     );
   }
 
-  render() {
+  // avoiding conditionals in Render
+  renderContent() {
     if (this.state.errMessage && !this.state.lat) {
       return <div>Error: {this.state.errMessage}</div>;
     }
@@ -22,6 +24,10 @@ class App extends React.Component {
     }
     return <Spinner message="Please accept location request..." />;
   }
+
+  render() {
+    return <div className="border red">{this.renderContent()}</div>;
+  }
 }
 // Render component to the screen
-ReactDOM.render(<App />, document.querySelector("#root"));
+ReactDOM.render(<GetLocalTime />, document.querySelector("#root"));
