@@ -1,5 +1,6 @@
 import React from "react";
 import SearchBar from "./SearchBar";
+import PasswordField from "./PasswordField";
 
 class App extends React.Component {
   onSearchSubmit(term) {
@@ -9,6 +10,8 @@ class App extends React.Component {
     return (
       <div className="ui container" style={{ margin: "10px" }}>
         <SearchBar onSubmit={this.onSearchSubmit} />
+        <hr />
+        <PasswordField />
       </div>
     );
   }
