@@ -1,17 +1,14 @@
 import React from "react";
 import SearchBar from "./SearchBar";
 // import PasswordField from "./PasswordField";
-import axios from "axios";
+import unsplash from "../api/unsplash";
 
 class App extends React.Component {
   state = { images: [] };
 
   onSearchSubmit = async (term) => {
-    const response = await axios.get("https://api.unsplash.com/search/photos", {
+    const response = await unsplash.get("/search/photos", {
       params: { query: term },
-      headers: {
-        Authorization: "Client-ID DCJojAQKTzchib0BiOAvx-o79ufwyGT3F_MsLcDJqPo",
-      },
     });
 
     this.setState({ images: response.data.results });
@@ -45,3 +42,15 @@ onSearchSubmit(term) {
         console.log(response);
       });
   } */
+// ALTERNATIVE METHOD 2
+/*
+onSearchSubmit = async (term) => {
+    const response = await axios.get("https://api.unsplash.com/search/photos", {
+      params: { query: term },
+      headers: {
+        Authorization: "Client-ID DCJojAQKTzchib0BiOAvx-o79ufwyGT3F_MsLcDJqPo",
+      },
+    });
+
+    this.setState({ images: response.data.results });
+  }; */
