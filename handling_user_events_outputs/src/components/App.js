@@ -4,13 +4,15 @@ import SearchBar from "./SearchBar";
 import axios from "axios";
 
 class App extends React.Component {
-  onSearchSubmit(term) {
-    axios.get("https://api.unsplash.com/search/photos", {
+  async onSearchSubmit(term) {
+    const response = await axios.get("https://api.unsplash.com/search/photos", {
       params: { query: term },
       headers: {
         Authorization: "Client-ID DCJojAQKTzchib0BiOAvx-o79ufwyGT3F_MsLcDJqPo",
       },
     });
+
+    console.log(response.data.results);
   }
   render() {
     return (
@@ -23,3 +25,20 @@ class App extends React.Component {
 }
 
 export default App;
+
+// ALTERNATIVE METHOD
+/*
+onSearchSubmit(term) {
+    axios
+      .get("https://api.unsplash.com/search/photos", {
+        params: { query: term },
+        headers: {
+          Authorization:
+            "Client-ID DCJojAQKTzchib0BiOAvx-o79ufwyGT3F_MsLcDJqPo",
+        },
+      })
+      .then((response) => {
+        // this function will be a callback which will get some data retrieved from some API
+        console.log(response);
+      });
+  } */
