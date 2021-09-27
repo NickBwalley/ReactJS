@@ -1,9 +1,9 @@
 import React from "react";
 import SearchBar from "./SearchBar";
-// import PasswordField from "./PasswordField";
 import unsplash from "../api/unsplash";
 import ImageList from "./ImageList";
-import Exercise from "./Exercise";
+// import PasswordField from "./PasswordField";
+// import Exercise from "./Exercise";
 
 class App extends React.Component {
   state = { images: [] };
@@ -21,7 +21,6 @@ class App extends React.Component {
         <SearchBar onSubmit={this.onSearchSubmit} />
         <hr />
         <ImageList images={this.state.images} />
-        <Exercise />
       </div>
     );
   }
