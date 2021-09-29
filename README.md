@@ -117,3 +117,61 @@ ReactDOM.render(
 6. Handling Errors Gracefully.
 7. Conditionally Rendering Content.
 ######  Chapter 6: Understanding Lifecycle methods
+1. Introduction to lifecycle methods
+- components of life cycle
+* constructor
+* Render (mandatory) return some JSX
+* componentDidMount() initial data loading - sit and wait for updates 
+* componentDidUpdate() called everytime an update is done or made - sit and wait until this component is no longer shown
+* componentWillUnmount() - remove some component on screen and do a clean up after just for cleanup 
+2. Why life cycle methods
+- other life cycle methods rarely used 
+* shouldComponentUpdate();
+* getDerivedSateFroProps();
+* getSnapShotBeforeUpdate();
+3. Refactoring data loading to lifecycle methods.
+- using componentDidMount() to initialize instaed of using the constructor to initialize 
+4. Alternate state initialization
+- this.state = {lat: null}; <-> state = {lat: null};
+5. Passing a state as props
+- <SeasonDisplay lat={this.state.lat}/>
+6. Determining season
+7. Termiar expressions in JSX.
+8. sHOWING ICONS
+9. Extracting options to config objects.
+10 Styling
+11. Showing a load spinner
+12. Specifying Default props.
+- {props.message || 'Loading...'}
+- Spinner.defaultProps = {
+	message: 'loading...'
+};
+13. Avoiding conditionals in Render
+- {this.rendercontent()}
+14. Review;
+Benefits of class components
+- Easier code organization 
+- Can use 'state' (another react system) which is easier to handle user input
+- Understand lifecycle events - Easier to do things when the app first stars.
+####### Chapter 7: Handling User Input with Forms and Events.
+1. Application overview
+- How do we get feeback from the user?
+- How do we fetch data from some outside API?
+- How do we show list of records?
+2. Component design.
+3. Adding some project structure.
+- Create new folder hosting all components.
+4. Showing forms to the user. <br>
+4.1 Add a touch of style
+5. Creating Event Handlers.
+- onClick() - user clicks on something
+- onChange() - user changes text in an input
+- onSubmit() - use submits a form. <br>
+5.1 Alternative Event handler syntax
+* Arrow function () => onInpuChange(event){
+console.log(event.target.value);
+} onChange{this.onInputChange}
+Abbr <=> onChange{onChange{(event) => console.log(event.target.value)}}
+6. Uncontrolled vs controlled Elements
+user types input 
+
