@@ -8,17 +8,17 @@ Components  in React – Basically returns a piece of JSX code that tells what s
 *******************************************
 JSX Elements
 1. Tell React to create a normal HTML Element (div, span, h1, table, hr, input)
-2. Tell React to show another component. (Field, Language, Translate)
-React - knows how to work with components (called a reconciler)
-ReactDOM - knows how to take instructions on what we want to show and turn it into HTML (called renderer)
-Babel -  Commandline tool that can take any version of JS and spit out a newer version Ex; ES2015, 2016, 2017, 2018 -> ES5 -> Display content to browser.
-procedure:
-$ node -v
-$ npm install -g create-react-app
-$ create-react-app *name_of_the_project*
-$ cd *project*
-$ npm start
-$ code . 
+2. Tell React to show another component. (Field, Language, Translate)<br/>
+React - knows how to work with components (called a reconciler)<br/>
+ReactDOM - knows how to take instructions on what we want to show and turn it into HTML (called renderer)<br/>
+Babel -  Commandline tool that can take any version of JS and spit out a newer version Ex; ES2015, 2016, 2017, 2018 -> ES5 -> Display content to browser.<br/>
+procedure:<br/>
+$ node -v<br/>
+$ npm install -g create-react-app<br/>
+$ create-react-app *name_of_the_project*<br/>
+$ cd *project*<br/>
+$ npm start<br/>
+$ code . <br/>
 
 *******************************************
 # REACT-CMDS
