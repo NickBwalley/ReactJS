@@ -1,6 +1,6 @@
 ###### Wednesday 8th September 2021
 *******************************************
-# REACT JS
+# MODERN REACT AND REDUX
 *******************************************
 
 JSX – JavaScript XML. It is simply a syntax extension for JavaScript. It allows us to write directly HTML in React(within JavaScript Code)… Instead of separating the markup and logic in separated file, React uses components for this purpose.
@@ -9,28 +9,50 @@ Components  in React – Basically returns a piece of JSX code that tells what s
 JSX Elements
 1. Tell React to create a normal HTML Element (div, span, h1, table, hr, input)
 2. Tell React to show another component. (Field, Language, Translate)
+React - knows how to work with components (called a reconciler)
+ReactDOM - knows how to take instructions on what we want to show and turn it into HTML (called renderer)
+Babel -  Commandline tool that can take any version of JS and spit out a newer version Ex; ES2015, 2016, 2017, 2018 -> ES5 -> Display content to browser.
+procedure:
+$ node -v
+$ npm install -g create-react-app
+$ create-react-app *name_of_the_project*
+$ cd *project*
+$ npm start
+$ code . 
 
 *******************************************
 # REACT-CMDS
-###### Alternative 1
 $ npm install -g create-react-app <br/>
-$ create-react-app *name of the project*
-
-###### Alternative 2
-$ npx create-react-app *name of the project*
-
-###### remove nodejs
+$ create-react-app *name of the project*<br/>
+$ npx create-react-app *name of the project*<br/>
 $ sudo apt-get remove nodejs <br/>
-$ sudo apt-get remove npm
-$ which node
+$ sudo apt-get remove npm <br/>
+$ which node <br/>
+$ node -v <br/>
+$ code . <br/>
+$ npm start <br/>
+$ npm install --save faker <br/>
+$ npm install --save axios <br/>
+*******************************************
 
-#### ReactJS-Concepts
 ###### Introduction 
 1. Nodejs Installation
+$ node -v
 2. Create React-app
+$ npm install -g create-react-app
+$ create-react-app *project_name*
+$ code .
+$ npm start
 3. JS Module Systems 3 parts.
+- Import the React and ReactDOM libraries.
+- Create React Component either function based or class based component,
+  which produce HTML and show to the user, handle feedback using Event handlers.
+- Take the react component and show on the screen
+ReactDOM.render(
+<App/>, document.querySelector('#root');
+);
 4. Displaying content with functional component
-###### Chapter 2
+###### Chapter 2: Building content with JSX.
 1. What is JSX
 2. HTML to JSX
 3. Inline styling with JSX
@@ -39,7 +61,7 @@ $ which node
 5. Referencing JS variable
 6. Finding forbidden property name
  - forName?
-###### Chapter 3
+###### Chapter 3: Communication with Props.
 1. Three tenets of Components. 
  - Component nesting - a component shown inside another component
  - Component reusabilitty - make a component which can be easily reused through our application
@@ -63,7 +85,7 @@ $ which node
 13. Showing Custom Children.
  - {props.children}
 14. Component Reuse Approval Card
-###### Chapter 4
+###### Chapter 4: Structuring Apps with Class-based Components.
 1. Class Based Component.
 2. Application Overview.
 3. Scaffolding the App. 
@@ -73,12 +95,25 @@ $ which node
 5. Resetting Geolocation Preference
 6. Handling Async Operations with Functional Components.
 7. Refactoring from Functional to Class Component.
-###### Chapter 5
+###### Chapter 5: State in React Components
 1. The rules of state
-- using constructor
+- Only usable with class components (Technically can be used with functional components using hook's system)
+- You will confuse props with state :(
+- State is a 'JS' object taht contains data relevant to a component
+- Updating 'state' on a component causes the component to (almost) instantly rerender.
+- State must be initialized when a component is created.
+- State can only be updated using the function; 'setState'
+- can be initialized using the constructor or outside the constructor
 2. Important Note about super(props) Deprecation. 
+- Note that it is not deprecated as per official React Documentation 
+- This is just a bug between Typescrips, React and code editor.
 3. Initializing State through Constructors.
+- constructor(props){
+	super(props); // reference to parents constructor
+}
 4. Updating State properties.
+- this.setState();
 5. App Lifecycle Walkthrough.
 6. Handling Errors Gracefully.
 7. Conditionally Rendering Content.
+######  Chapter 6: Understanding Lifecycle methods
