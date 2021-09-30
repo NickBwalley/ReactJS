@@ -1,4 +1,4 @@
-###### Wednesday 8th September 2021
+## Wednesday 8th September 2021
 *******************************************
 # MODERN REACT AND REDUX
 *******************************************
@@ -35,7 +35,7 @@ $ npm install --save faker <br/>
 $ npm install --save axios <br/>
 *******************************************
 
-###### Introduction 
+## Introduction 
 1. Nodejs Installation
 $ node -v
 2. Create React-app
@@ -52,7 +52,7 @@ ReactDOM.render(
 <App/>, document.querySelector('#root');
 );
 4. Displaying content with functional component
-###### Chapter 2: Building content with JSX.
+## Chapter 2: Building content with JSX.
 1. What is JSX
 2. HTML to JSX
 3. Inline styling with JSX
@@ -61,7 +61,7 @@ ReactDOM.render(
 5. Referencing JS variable
 6. Finding forbidden property name
  - forName?
-###### Chapter 3: Communication with Props.
+## Chapter 3: Communication with Props.
 1. Three tenets of Components. 
  - Component nesting - a component shown inside another component
  - Component reusabilitty - make a component which can be easily reused through our application
@@ -89,7 +89,7 @@ ReactDOM.render(
 13. Showing Custom Children.
  - {props.children}
 14. Component Reuse Approval Card
-### Chapter 4: Structuring Apps with Class-based Components.
+## Chapter 4: Structuring Apps with Class-based Components.
 1. Class Based Component.
 - *component* -> Function or class that produces HTML and display to the user using JSX and handles feedback from the user using Event Handlers. 
  - REACT PREVIOUSLY:
@@ -126,7 +126,7 @@ ReactDOM.render(
 - 1. Must be a Javascript class.
 - 2. Must extend (subclass) React.Component
 - 3. Must define a 'render' method that returns some amount of JSX.
-###### Chapter 5: State in React Components
+## Chapter 5: State in React Components
 1. The rules of state
 - Only usable with class components (Technically can be used with functional components using hook's system)
 - You will confuse props with state :(
@@ -147,7 +147,7 @@ ReactDOM.render(
 5. App Lifecycle Walkthrough.
 6. Handling Errors Gracefully.
 7. Conditionally Rendering Content.
-######  Chapter 6: Understanding Lifecycle methods
+##  Chapter 6: Understanding Lifecycle methods
 1. Introduction to lifecycle methods
 - components of life cycle
 * constructor
@@ -184,7 +184,7 @@ Benefits of class components
 - Easier code organization 
 - Can use 'state' (another react system) which is easier to handle user input
 - Understand lifecycle events - Easier to do things when the app first stars.
-####### Chapter 7: Handling User Input with Forms and Events.
+### Chapter 7: Handling User Input with Forms and Events.
 1. Application overview
 - How do we get feeback from the user?
 - How do we fetch data from some outside API?
@@ -237,7 +237,7 @@ state => {term: ''}	<input value = {go look at state to get current value} />
 - Function based component -> props.message
 - Class based component -> this.props.message
 
-####### Chapter 8: Making API Requests with React.
+### Chapter 8: Making API Requests with React.
 1. Fetching data 
 - unsplash/developers. 
 2. Axios vs Fetch
@@ -268,7 +268,7 @@ onFormSubmit = asnc (response) => {
 }
 7. Creating custom clients.
 
-####### Chapter 9: Building Lists of Records.
+### Chapter 9: Building Lists of Records.
 1. Rendering lists.
 2. Review of Map statements.
 - numbers.map(() => {
@@ -279,7 +279,7 @@ onFormSubmit = asnc (response) => {
 - Performance since it uniquely identifies a list.
 5. Implementng keys in lists.
 
-####### Chapter 10: Using Refs for DOM Access.
+### Chapter 10: Using Refs for DOM Access.
 1. Grid CSS
 -  issues with grid css.
 2. Creating an Image Card Component. 
@@ -308,7 +308,7 @@ React Refs <br>
 - Rendering a list - use map function. 
 - Anytime we want to interact with an individual element  inside a DOM  we use a reference. (this.imageRef = React.createRef());
 
-####### Chapter 10: Let's Test your Reeact Mastery (Create a Youtube Application using React and Youtube API Requests)
+### Chapter 10: Let's Test your Reeact Mastery (Create a Youtube Application using React and Youtube API Requests)
 1. App overview. 
 - youtube public free API
 2. Component Design 
