@@ -173,5 +173,50 @@ console.log(event.target.value);
 } onChange{this.onInputChange}
 Abbr <=> onChange{onChange{(event) => console.log(event.target.value)}}
 6. Uncontrolled vs controlled Elements
-user types input 
+- user types input 
+- callback gets invoked 
+- We call setState with a new value 
+- Component re-renders.
+- Input is tld what it's value is (coming from state)
+
+Key difference between controlled and uncontrolled elements <br>
+Controlled - Store information inside of component on state propery as opposed to storing information inside DOM 
+<br>
+React world vs DOM World
+state => {term: ''}	<input value = {go look at state to get current value} />
+<br>
+- React is the one driving and storing all of our data and not HTML side of things (controlled components)
+- Assignment => user enter password and warning disappers if yuser enters value > 4. 
+7. Handling Form submittal 
+8. Understanding 'this' in JavaScript
+- What is 'this' used for in a class?
+- How is the value of 'this' determined in a function. 
+(i) constructor(){
+	this.drive - this.drive.bind(this);
+}
+(ii) onFormSubmit = (event) => {
+	// code stub
+}
+(iii) onSubmit = {(e) => this.onFormSubmit(e)}
+
+9. Communicating child to parent.
+ - Note: props -> parent -> child and not the other way round.
+10. Invoking callbacks in children
+- Note using props.
+- Function based component -> props.message
+- Class based component -> this.props.message
+
+####### Chapter 8: Making API Requests with React.
+1. Fetching data 
+- unsplash/developers. 
+2. Axios vs Fetch
+- Axios - 3rd party package.
+- Fech - Functon built into modern browsers.
+- install axios
+$ npm install --save axios 
+<br> 
+3. Viewing Request Results. 
+4. Handling requests with Async Await. 
+
+
 
