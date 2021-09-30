@@ -92,9 +92,9 @@ ReactDOM.render(
 ### Chapter 4: Structuring Apps with Class-based Components.
 1. Class Based Component.
 - *component* -> Function or class that produces HTML and display to the user using JSX and handles feedback from the user using Event Handlers. 
-- REACT PREVIOUSLY:
-- *Functions* => produce JSX to show content to the user 
-- *Class* => 
+ - REACT PREVIOUSLY:
+ - *Functions* => produce JSX to show content to the user 
+ - *Class* => 
 * produce JSX to show content to the user (r1)
 * Lifecyle method system to run code at specific point in time(r2)
 * state system to update contents on screen (r3)
