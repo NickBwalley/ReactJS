@@ -100,13 +100,13 @@ ReactDOM.render(
  - state system to update contents on screen (r3)
 <br>
 HOW REACT IS NOW<br> 
-- *function components* => r1.ref();
+- *function components* => r1.ref()
 - can use hooks to run code at specific point in time. 
 - Use hooks to access state system and update content on screen. 
-- *class components* => 
-- r1.ref();
-- r2.ref();
-- r3.ref();
+- *class components* => <br>
+- r1.ref()
+- r2.ref()
+- r3.ref()
 - Realword application:
 - Class based components - Established projects whereas hybrid (both) Newer Projects.
 - Really hard -> Learn Hooks -> Learn Redux.
@@ -119,7 +119,7 @@ HOW REACT IS NOW<br>
 3. Scaffolding the App. 
 4. Getting a Users Physical location
 - window.navigator.geolocation.getCurrentPosition((position) => console.log(position), 
-  (err) console.log(err));
+  (err) console.log(err))
 5. Resetting Geolocation Preference
 6. Handling Async Operations with Functional Components.
 7. Refactoring from Functional to Class Component.
