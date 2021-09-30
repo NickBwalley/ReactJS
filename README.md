@@ -89,7 +89,7 @@ ReactDOM.render(
 13. Showing Custom Children.
  - {props.children}
 14. Component Reuse Approval Card
-###### Chapter 4: Structuring Apps with Class-based Components.
+### Chapter 4: Structuring Apps with Class-based Components.
 1. Class Based Component.
 - *component* -> Function or class that produces HTML and display to the user using JSX and handles feedback from the user using Event Handlers. 
 - REACT PREVIOUSLY:
