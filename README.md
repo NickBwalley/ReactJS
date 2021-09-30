@@ -184,7 +184,7 @@ Benefits of class components
 - Easier code organization 
 - Can use 'state' (another react system) which is easier to handle user input
 - Understand lifecycle events - Easier to do things when the app first stars.
-### Chapter 7: Handling User Input with Forms and Events.
+## Chapter 7: Handling User Input with Forms and Events.
 1. Application overview
 - How do we get feeback from the user?
 - How do we fetch data from some outside API?
@@ -237,7 +237,7 @@ state => {term: ''}	<input value = {go look at state to get current value} />
 - Function based component -> props.message
 - Class based component -> this.props.message
 
-### Chapter 8: Making API Requests with React.
+## Chapter 8: Making API Requests with React.
 1. Fetching data 
 - unsplash/developers. 
 2. Axios vs Fetch
@@ -268,7 +268,7 @@ onFormSubmit = asnc (response) => {
 }
 7. Creating custom clients.
 
-### Chapter 9: Building Lists of Records.
+## Chapter 9: Building Lists of Records.
 1. Rendering lists.
 2. Review of Map statements.
 - numbers.map(() => {
@@ -279,7 +279,7 @@ onFormSubmit = asnc (response) => {
 - Performance since it uniquely identifies a list.
 5. Implementng keys in lists.
 
-### Chapter 10: Using Refs for DOM Access.
+## Chapter 10: Using Refs for DOM Access.
 1. Grid CSS
 -  issues with grid css.
 2. Creating an Image Card Component. 
@@ -308,7 +308,7 @@ React Refs <br>
 - Rendering a list - use map function. 
 - Anytime we want to interact with an individual element  inside a DOM  we use a reference. (this.imageRef = React.createRef());
 
-### Chapter 10: Let's Test your Reeact Mastery (Create a Youtube Application using React and Youtube API Requests)
+## Chapter 10: Let's Test your Reeact Mastery (Create a Youtube Application using React and Youtube API Requests)
 1. App overview. 
 - youtube public free API
 2. Component Design 
