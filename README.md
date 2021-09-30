@@ -232,7 +232,98 @@ async onSearchSubmit(term){
 5. Setting state after async requests. 
 6. binding callbacks 
 - Solution is to create an arrow function 
+onFormSubmit = asnc (response) => {
+	// code snippet 
+}
+7. Creating custom clients.
+
+####### Chapter 9: Building Lists of Records.
+1. Rendering lists.
+2. Review of Map statements.
+- numbers.map(() => {
+	// num * 10; 
+}
+3. Rendering lists of components.
+4. The purpose of keys in lists.
+- Performance since it uniquely identifies a list.
+5. Implementng keys in lists.
+
+####### Chapter 10: Using Refs for DOM Access.
+1. Grid CSS
+-  issues with grid css.
+2. Creating an Image Card Component. 
+- grid-row-end
+3. Accessing the DOM with Ref.
+- Let the imageCard render itself and its image
+- Reach into the DOM and figure out the height of the image
+- Set the image hight on state to get the component to rerender.
+- When rerendering, assign 'grid-row-end' to make sure the image, takes up the appropriate space.
+React Refs <br>
+- Gives access ot a single DOM element.
+- We create refs in the contructor, assign them to instance variables, then pass to a praricular JSX element as props.
+4. Accessing Image height 
+- constructor(props) {
+	super(props)
+	this.imageRef = React.createRef();
+}
+5. Callbacks on Image Load.
+- componentDidMount(){
+	this.imageRef.current.addEventListener('load', this.setSpan);
+}
+6. Dynamic Spans.
+7. App Review.
+- Anytime you have a callback function its safe to use an arrow function.
+- Props system - communicate from parent down to a child.
+- Rendering a list - use map function. 
+- Anytime we want to interact with an individual element  inside a DOM  we use a reference. (this.imageRef = React.createRef());
+
+####### Chapter 10: Let's Test your Reeact Mastery (Create a Youtube Application using React and Youtube API Requests)
+1. App overview. 
+- youtube public free API
+2. Component Design 
+3. Scaffolding the App
+- Setup boiler plate. 
+4. Reminder on Event Handlers.
+- controlled vs uncontrolled components. 
+- onChange
+- callback functions. 
+5. Handling Form submittal. 
+6. Accessing the youtube API
+- API key (console.developers.google.com)
+7. Searching for videos.
+- youtube api search. 
+- Adding a videotype to avoid warnings of each child should have a unique key
+8. Putting it all together. 
+9. Updating State with Fetched data.
+10. Pasing state as props.
+- {this.state.videos}
+11. Rendering a list of videos. 
+12. Rendering video Thumbmnails. 
+- styling a list. 
+13. Communication from child to parent 
+14. Deeply nested callbacks. 
+NOTE: CALLBACK FUNCTION - function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or actions. 
+15. Conditional Rendering. 
+- stylng the video details. 
+16. Displaying a video player. 
+- Iframe - makes a request to some outside website besides the one the user is visiting. 
+- ES2015 template string: `https://www.youtube.com/embed/${video.id.videoId}`
+- Fixing a a few warnings. 
+17. Defaulting video selection. 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
