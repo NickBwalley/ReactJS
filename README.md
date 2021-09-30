@@ -70,14 +70,18 @@ ReactDOM.render(
 2. Styling using Semantic-UI
  - set up semantic ui inside index.html
 3. Naive component Approach
+- create a blog post comment. 
 4. Specifying images 
  - install faker js (npm install --save faker)
  - faker.image.avatar();
 5. Duplicating a single component
 6. Extracting JSX to new component
 7. Component Nesting
+ - export default ProjectName;
+ - import ProjectName from './ProjectName';
 8. React's Props System (Properties)
  - Props - System for passing data from a parent component to a child component.
+ - Goal is to customize or configure a child component. 
 9. Passing and Receiving Props.
 10. Passing Multiple Props.
 11. Components Reuse
@@ -87,7 +91,31 @@ ReactDOM.render(
 14. Component Reuse Approval Card
 ###### Chapter 4: Structuring Apps with Class-based Components.
 1. Class Based Component.
+- *component* -> Function or class that produces HTML and display to the user using JSX and handles feedback from the user using Event Handlers. 
+- REACT PREVIOUSLY:
+- *Functions* => produce JSX to show content to the user 
+- *Class* => 
+* produce JSX to show content to the user (r1)
+* Lifecyle method system to run code at specific point in time(r2)
+* state system to update contents on screen (r3)
+<br>
+HOW REACT IS NOW: 
+- *function components* => r1.ref();
+- can use hooks to run code at specific point in time. 
+- Use hooks to access state system and update content on screen. 
+- *class components* => 
+- r1.ref();
+- r2.ref();
+- r3.ref();
+- Realword application:
+- Class based components - Established projects whereas hybrid (both) Newer Projects.
+- Really hard -> Learn Hooks -> Learn Redux.
+- Much easier -> Learn Class components -> Learn Hooks -> Learn Redux.
 2. Application Overview.
+- Function components -> Good for simple content. 
+- Class components -> Good for just about everythihng else.
+- 'state' system -> handle user input.
+- understanding lifecycle events -> easier to do things when the app first starts.
 3. Scaffolding the App. 
 4. Getting a Users Physical location
 - window.navigator.geolocation.getCurrentPosition((position) => console.log(position), 
@@ -95,6 +123,10 @@ ReactDOM.render(
 5. Resetting Geolocation Preference
 6. Handling Async Operations with Functional Components.
 7. Refactoring from Functional to Class Component.
+- *Rules of Class Components*
+- 1. Must be a Javascript class.
+- 2. Must extend (subclass) React.Component
+- 3. Must define a 'render' method that returns some amount of JSX.
 ###### Chapter 5: State in React Components
 1. The rules of state
 - Only usable with class components (Technically can be used with functional components using hook's system)
