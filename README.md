@@ -98,8 +98,7 @@ ReactDOM.render(
  - produce JSX to show content to the user (r1)
  - Lifecyle method system to run code at specific point in time(r2)
  - state system to update contents on screen (r3)
-<br>
-HOW REACT IS NOW<br> 
+ - HOW REACT IS NOW
 - *function components* => r1.ref()
 - can use hooks to run code at specific point in time. 
 - Use hooks to access state system and update content on screen. 
