@@ -217,6 +217,22 @@ $ npm install --save axios
 <br> 
 3. Viewing Request Results. 
 4. Handling requests with Async Await. 
+- whenever we make a request with axios it returns an object called a promose. A promise is an object that will esentially give a little notification when some amount of work like a network request is completed. 
+<br>
+axios.get('https://api.unpslash.com/search/photos', {
+	params: {query: term},
+	headers:{
+		Authorization: client-ID "key"
+	}
+}).then()
+<br>
+async onSearchSubmit(term){
+	const response = await.axios.get()
+}
+5. Setting state after async requests. 
+6. binding callbacks 
+- Solution is to create an arrow function 
+
 
 
 
