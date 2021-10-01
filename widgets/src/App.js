@@ -1,5 +1,6 @@
 import React from "react";
 import Accordion from "./components/Accordion";
+import ClickToCount from "./components/ClickToCount";
 
 const items = [
   {
@@ -20,6 +21,7 @@ export default () => {
     <div>
       <br />
       <Accordion items={items} />
+      <ClickToCount />
     </div>
   );
 };
