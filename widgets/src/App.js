@@ -1,6 +1,6 @@
 import React from "react";
-import Accordion from "./components/Accordion";
-import ClickToCount from "./components/ClickToCount";
+// import Accordion from "./components/Accordion";
+// import ClickToCount from "./components/ClickToCount";
 import Search from "./components/Search";
 
 const items = [
