@@ -1,6 +1,7 @@
 import React from "react";
 import Accordion from "./components/Accordion";
 import ClickToCount from "./components/ClickToCount";
+import Search from "./components/Search";
 
 const items = [
   {
@@ -20,8 +21,9 @@ export default () => {
   return (
     <div>
       <br />
-      <Accordion items={items} />
-      <ClickToCount />
+      {/*<Accordion items={items} />
+      <ClickToCount />*/}
+      <Search />
     </div>
   );
 };
