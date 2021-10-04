@@ -24,6 +24,10 @@ const Search = () => {
         search();
       }
     }, 500);
+
+    return () => {
+      clearTimeout(timeoutId);
+    };
   }, [term]); // this term renders at initial data loading and every time it changes
 
   const renderedResults = results.map((result) => {
