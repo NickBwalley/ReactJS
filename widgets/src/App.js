@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 // import Accordion from "./components/Accordion";
 // import ClickToCount from "./components/ClickToCount";
-import Search from "./components/Search";
+// import Search from "./components/Search";
+import Dropdown from "./components/Dropdown";
 
 const items = [
   {
@@ -17,13 +18,35 @@ const items = [
     content: "You use React by creating components",
   },
 ];
+
+const options = [
+  {
+    label: "The Color Red",
+    value: "red",
+  },
+  {
+    label: "The Color Green",
+    value: "green",
+  },
+  {
+    label: "A Shade of Blue",
+    value: "blue",
+  },
+];
 export default () => {
+  const [selected, setSelected] = useState(options[0]);
+
   return (
     <div>
       <br />
       {/*<Accordion items={items} />
-      <ClickToCount />*/}
-      <Search />
+      <ClickToCount />
+      <Search />*/}
+      <Dropdown
+        selected={selected}
+        options={options}
+        onSelectedChange={setSelected}
+      />
     </div>
   );
 };
