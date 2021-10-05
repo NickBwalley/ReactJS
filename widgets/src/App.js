@@ -3,6 +3,7 @@ import React, { useState } from "react";
 // import ClickToCount from "./components/ClickToCount";
 // import Search from "./components/Search";
 import Dropdown from "./components/Dropdown";
+import Translate from "./components/Translate";
 
 const items = [
   {
@@ -39,10 +40,10 @@ export default () => {
 
   return (
     <div>
-      <br />
+      <Translate />
       {/*<Accordion items={items} />
       <ClickToCount />
-      <Search />*/}
+      <Search />
       <button onClick={() => setShowDropDown(!showDropDown)}>
         Toggle DropDown
       </button>
@@ -52,7 +53,7 @@ export default () => {
           options={options}
           onSelectedChange={setSelected}
         />
-      ) : null}
+      ) : null}*/}
     </div>
   );
 };
