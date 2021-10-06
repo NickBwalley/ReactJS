@@ -1,18 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
 
-const ClickMeToCount = () => {
-  const [count, setCount] = useState(0);
+class ClickMeToCount extends React.Component {
+  state = { count: 0 };
 
-  const onButtonClick = () => {
-    setCount(count + 1);
+  onButtonClick = () => {
+    this.setState({ count: this.state.count + 1 });
   };
 
-  return (
-    <div>
-      <h1>Count: {count}</h1>
-      <button onClick={onButtonClick}>Click me!</button>
-    </div>
-  );
-};
+  render() {
+    return (
+      <div>
+        <h1>Count: {this.state.count}</h1>
+        <button onClick={this.onButtonClick}>Click me!</button>
+      </div>
+    );
+  }
+}
 
 export default ClickMeToCount;
