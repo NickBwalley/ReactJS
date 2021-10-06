@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-// import Accordion from "./components/Accordion";
-// import ClickToCount from "./components/ClickToCount";
-// import Search from "./components/Search";
+import Accordion from "./components/Accordion";
+import ClickToCount from "./components/ClickToCount";
+import Search from "./components/Search";
 import Dropdown from "./components/Dropdown";
 import Translate from "./components/Translate";
 
@@ -38,22 +38,11 @@ export default () => {
   const [selected, setSelected] = useState(options[0]);
   const [showDropDown, setShowDropDown] = useState(true);
 
-  return (
-    <div>
-      <Translate />
-      {/*<Accordion items={items} />
-      <ClickToCount />
-      <Search />
-      <button onClick={() => setShowDropDown(!showDropDown)}>
-        Toggle DropDown
-      </button>
-      {showDropDown ? (
-        <Dropdown
-          selected={selected}
-          options={options}
-          onSelectedChange={setSelected}
-        />
-      ) : null}*/}
-    </div>
-  );
+  const showAccordion = () => {
+    if (window.location.pathname === "/") {
+      return <Accordion items={items} />;
+    }
+  };
+
+  return <div>{showAccordion()}</div>;
 };
