@@ -2,16 +2,16 @@ import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 
 const PageOne = () => {
-  return (
-    <div>
-      PageOne
-      <button>Click me!</button>
-    </div>
-  );
+  return <div>PageOne</div>;
 };
 
 const PageTwo = () => {
-  return <div> PageTwo</div>;
+  return (
+    <div>
+      PageTwo
+      <button>Click me!</button>
+    </div>
+  );
 };
 
 const App = function () {
