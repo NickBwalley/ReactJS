@@ -1,11 +1,11 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Link } from "react-router-dom";
 
 const PageOne = () => {
   return (
     <div>
       <h2>This is Page One</h2>
-      <a href="/pagetwo">Navigate to PageTwo!</a>
+      <Link to="/pagetwo">Navigate to PageTwo!</Link>
     </div>
   );
 };
@@ -14,7 +14,7 @@ const PageTwo = () => {
   return (
     <div>
       <h2>This is Page Two</h2>
-      <a href="/">Navigate to PageOne!</a>
+      <Link to="/">Navigate to PageOne!</Link>
     </div>
   );
 };
@@ -33,3 +33,7 @@ const App = function () {
 };
 
 export default App;
+// other routers that are used in a react application
+// HashRouter -> uses everthing after a # as the path localhost:3000/#/pagetwo
+// MemoryRouter -> doesn't use the URL to track navigation localhost:3000/
+// BrowserRouter => uses everything after hte TLD or port as the path localhost:3000/pagetwo
