@@ -9,6 +9,12 @@
       "title": "Other Stream",
       "description": "Here's some other stream",
       "id": 2
+    },
+    {
+      "title": "The Bronze Bomber",
+      "description": "This steam was created by nickbwalley",
+      "userId": "102610812716622071046",
+      "id": 3
     }
   ]
 }
