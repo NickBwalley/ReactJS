@@ -15,6 +15,12 @@
       "description": "This steam was created by nickbwalley",
       "userId": "102610812716622071046",
       "id": 3
+    },
+    {
+      "title": "Programmatic Navigation",
+      "description": "You should not be able to see this list on create stream",
+      "userId": "102610812716622071046",
+      "id": 4
     }
   ]
 }
