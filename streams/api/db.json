@@ -1,30 +1,22 @@
 {
   "streams": [
     {
-      "title": "My Stream",
-      "description": "This is a great stream",
+      "title": "This is my first stream",
+      "description": "Just some football highlights!!",
+      "userId": "102610812716622071046",
       "id": 1
     },
     {
-      "title": "Other Stream",
-      "description": "Here's some other stream",
+      "title": "Just some blog posts",
+      "description": "you'll enjoy some of it",
+      "userId": "102610812716622071046",
       "id": 2
     },
     {
-      "title": "The Bronze Bomber",
-      "description": "This steam was created by Deontay Wilder",
-      "id": 3
-    },
-    {
-      "title": "Programmatic Navigation",
-      "description": "Just done some refactoring with this program!!!",
-      "id": 4
-    },
-    {
-      "title": "Me Streaming Component Reuse!",
-      "description": "This refactoring was made by a PATCH request!!!",
+      "title": "This is me and some celebrities",
+      "description": "It was really funtastic",
       "userId": "102610812716622071046",
-      "id": 5
+      "id": 4
     }
   ]
 }
