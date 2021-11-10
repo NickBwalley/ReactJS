@@ -308,7 +308,7 @@ React Refs <br>
 - Rendering a list - use map function. 
 - Anytime we want to interact with an individual element  inside a DOM  we use a reference. (this.imageRef = React.createRef());
 
-## Chapter 10: Let's Test your Reeact Mastery (Create a Youtube Application using React and Youtube API Requests)
+## Chapter 10: Let's Test your React Mastery (Create a Youtube Application using React and Youtube API Requests)
 1. App overview. 
 - youtube public free API
 2. Component Design 
@@ -342,6 +342,94 @@ NOTE: CALLBACK FUNCTION - function passed into another function as an argument, 
 - Fixing a a few warnings. 
 17. Defaulting video selection. 
 
+## Chapter 11: Understanding Hooks System in React
+1. React Hooks <br>
+	useState - function that lets you use state in a functional component. <br>
+	useEffect - function that lets you use something like lifecycle methods in a functional component. 
+	useRef - Function that lets you create a ref in a function component. 
+
+	Hooks are a way to write reusable code, instead of more classic technique like Inheritance. 
+	Primitive hooks. 
+	- useState, useEffect, useRef, useContext, useReducer, useCallback, useMemo, useImperativeHandle, useLayoutEffect, useDebugValue <br>
+	- customHook - Reuse primitive hook. 
+	- Accordion - GRaphical contorl element comprising a vertically stacked list of items, such as thumbnails. Each item can be "expanded" or "collapsed: to reveal
+	the content associated with that item. 
+2. App Architecture. 
+	- Accordion Application. 
+3. Comminicating item props. 
+	- create array pass content to the derived component. 
+4. Building and styling the accordion. 
+5. Helper function in Function Component.
+6. Introducing useState. 
+	- This just entails adding the {useState} from 'react'.
+7. Understanding useState.  
+	- Array destructuring. 
+8. Settter function. 
+	- SetActiveIndex(index) As soon as we  all any setter function from useState hook our entire component will rerender automatically. 
+9. Expanding on useState. 
+10. Exercise on useState. 
+	- Building an application which entails a button which you click and it automatically increments by one. 
+11. Creating a search widget architecture. 
+	- Wikipedia API. - This application entails building a search component in which the user is going to enter a search term and the wikipedia API is going to be called with the search results. 
+12. The useEffect Hook. 
+	- This allows function component to use something like lifecycle methods
+	- We configure the hooks to run some code automatically in one of the three scenarios. 
+	1. When the component is rendered for the first time only. 
+	2. When tehh component is rendered for the first time and whenever it rerenders. 
+	3. When the component is rerendered and whatever it rerenders and some piece of data has changed. 
+	useEffect second argument. 
+	4. Illustration.
+	- [] - runs at initial render. 
+	- [data] - Run at initial render and runs after every re-render if data has chanced since the last render. 
+	- ... nothing - Run at initial Render and runs after every re-render. 
+13. Async code in useEffect. 
+14. Executing the request from the useEffect. 
+15. Default search terms. 
+16. List building. 
+17. XSS ATtacks. <span dangerouslySetInnerHTML>
+18. Linking to a wikipedia page. 
+19. Only search with a term. 
+20. Throttling API request, using debounced term. 
+21. Reminder on setTimeout and clearTimeout;
+22. useEFfects cleanupFunction. which returns a function which will clean up the timeout function. 
+23. Implementing a delayed request. 
+24. Searching on initial render. 
+30. Optional video fixing warning. 
+31. Dropdown architecture.
+32. Reminder on Event Bubbling. 
+33. Application. 
+	- Dropdown needs to detect a click event of any element  besides one it created. 
+	- Dropdown has a hardtime setting up event handlers on elements that it does not create.
+	- Event bubbling is a thing 
+	- document.body.addEventListener('click', () => console.log('click'))
+34. Binding on Event Handler. 
+35. make use of useRef();
+36. Body Event listner cleanup. 
+37. The translate widget. 
+38. Scaffoldijng the Translate component. 
+39. Adding a language input. 
+49. Google Translate API key.
+50. Building the convert component. 
+51. Using the Google translate API.
+52. Displaying translated text. 
+53. Debouncing translation updateds. 
+54. Reviewing useState and useEffect.
+ 
+ ## Chapter 13: Navigation from scratch. 
+1. Navigation in React. 
+2. Basic component Routing. 
+	- localhost:3000/translate -> domain: port: pathname
+3. Bulding a reusable route component. 
+4. Implementing a header for Navigation. 
+5. Handling navigation. 
+	- onPageRefresh, user clicks on to a URL. 
+6. Building a list. 
+7. Changing the URL. 
+	- window.history.puushState({}, '', '/translate');
+8. Detecting Navigation. 
+9. Updating the Route. 
+10. Handling command clicks. 
+	- if(event.matekey || event.ctrlKey){return; }
 
 
 
